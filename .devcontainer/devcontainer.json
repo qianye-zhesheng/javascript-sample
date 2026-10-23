@@ -1,0 +1,19 @@
+{
+  "name": "JavaScript Development",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "remoteUser": "node",
+  "updateRemoteUserUID": true,
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "streetsidesoftware.code-spell-checker",
+        "dbaeumer.vscode-eslint",
+        "ritwickdey.LiveServer",
+        "esbenp.prettier-vscode",
+        "WallabyJs.console-ninja"
+      ]
+    }
+  }
+}
