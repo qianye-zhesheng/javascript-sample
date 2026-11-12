@@ -3,8 +3,18 @@
   "build": {
     "dockerfile": "Dockerfile"
   },
+  "features": {
+    "ghcr.io/anthropics/devcontainer-features/claude-code:1.0": {}
+  },
   "remoteUser": "node",
   "updateRemoteUserUID": true,
+  "mounts": [
+    "source=claude-code-config-${devcontainerId},target=/home/node/.claude,type=volume"
+  ],
+  "containerEnv": {
+    "CLAUDE_CONFIG_DIR": "/home/node/.claude"
+  },
+  "postCreateCommand": "sudo chown -R node:node /home/node/.claude",
   "customizations": {
     "vscode": {
       "extensions": [
