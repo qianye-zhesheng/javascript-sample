@@ -1,6 +1,3 @@
-// ブラウザの開発者ツール（Console）で実行するサンプル
-// JSONPlaceholder のユーザー一覧を取得し、会社名で絞り込んで表示する
-
 async function showUsers() {
   try {
     // 1. サーバーへリクエスト
