@@ -1,23 +1,18 @@
-let pointBalance = 1000;
+let points = 1000;
 const usePoint = 300;
 
-const pointBalanceElement = document.querySelector("#point-balance");
+const pointsElement = document.querySelector("#points");
 const usePointButton = document.querySelector("#use-point-button");
-const messageElement = document.querySelector("#message");
 
-function showPointBalance() {
-  pointBalanceElement.textContent = pointBalance;
+function showPoints() {
+  pointsElement.textContent = points;
 }
 
 function handleUsePoint() {
-  if (pointBalance < usePoint) {
-    messageElement.textContent = "ポイントが不足しています。";
-    return;
-  }
-  pointBalance = pointBalance - usePoint;
-  showPointBalance();
+  points = points - usePoint;
+  showPoints();
 }
 
-usePointButton.addEventListener("click", handleUsePoint);
+showPoints();
 
-showPointBalance();
+usePointButton.addEventListener("click", handleUsePoint);

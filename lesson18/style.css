@@ -23,9 +23,9 @@ p {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-#point-balance,
+#points,
 #use-point,
-#balance-after-use {
+#points-after-use {
   color: #2e9b5f;
   font-size: 32px;
   font-weight: bold;
@@ -47,14 +47,4 @@ button {
 
 button:hover {
   background-color: #d97a0f;
-}
-
-#message {
-  color: #d33a3a;
-  font-weight: bold;
-  text-align: center;
-}
-
-#message:empty {
-  display: none;
 }
