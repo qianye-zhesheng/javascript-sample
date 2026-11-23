@@ -8,7 +8,7 @@ async function fetchUsers() {
 
     const users = await response.json();
 
-    console.log(users);
+    console.table(users);
   } catch (error) {
     console.error("データ取得に失敗しました:", error);
   }

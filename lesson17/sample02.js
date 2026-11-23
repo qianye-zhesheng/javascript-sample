@@ -6,7 +6,7 @@ const users = [
 ];
 
 const premiumUsers = users.filter((user) => user.points >= 1000);
-console.log(premiumUsers);
+console.table(premiumUsers);
 
 const premiumUserNames = premiumUsers.map((user) => user.name);
 console.log(premiumUserNames);
